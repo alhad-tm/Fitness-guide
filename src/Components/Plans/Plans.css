@@ -34,15 +34,10 @@
    
     background:linear-gradient(210.41deg, #fa5042 21.14%, #ffa739 100.75%);
 }
-.plan:nth-child(1):hover{
-    
+.plan:nth-child(1):hover,.plan:nth-child(3):hover{ 
     background: rgb(117, 115, 115);
 }
-.plan:nth-child(3):hover{
-    
-    background: rgb(117, 115, 115);
-}
-    
+
 .plan>svg{
     fill: var(--orange);
     width: 2rem;

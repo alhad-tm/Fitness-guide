@@ -22,24 +22,30 @@
     padding: 1.5rem;
     width: 15rem;
 }
-.plan:nth-child(2){
+/* .plan:nth-child(2){
     background: var(--planCard);
     transform: scale(1.1);
-}
+} */
 .plan:nth-child(2){
-    background: var(--planCard);
-    transform: scale(1.1);
+    /* background: var(--planCard); */
+    /* background: linear-gradient(205.41deg,rgb(119, 115, 115) 2.14%,rgb(50, 40, 40) 85.75%); */
+    background: linear-gradient(#d61e09,#000000);
+    transform: scale(1.08);
 }
 .plan:nth-child(2):hover{
+    background: linear-gradient(#ff1900,#000000);
    
-    background:linear-gradient(210.41deg, #fa5042 21.14%, #ffa739 100.75%);
 }
+.plan:nth-child(1),.plan:nth-child(3){ 
+    background:linear-gradient(#4c5151,#000000);
+}
+
 .plan:nth-child(1):hover,.plan:nth-child(3):hover{ 
-    background: rgb(117, 115, 115);
+    background:linear-gradient(#424343,#000000);
 }
 
 .plan>svg{
-    fill: var(--orange);
+    fill: white;
     width: 2rem;
     height: 2rem;
 }
@@ -84,4 +90,12 @@
     height: 23rem;
     top: 10rem;
     right:0;
+}
+@media screen and (max-width:768px) {
+   .plans{
+    flex-direction: column;
+   }
+   .plans>:nth-child(2){
+    transform: none;
+   }
 }

@@ -11,7 +11,7 @@ const Testimonials = () => {
   const tLength=testimonialsData.length;
  
   return (
-    <div className="Testimonials">
+    <div className="Testimonials" id='testimonials'>
         <div className="left-t">
         <span>Reviews</span>
         <span className='stroke-text'>What they</span>
@@ -20,7 +20,7 @@ const Testimonials = () => {
             {testimonialsData[selected].review}
         </span>
        <span>
-        <span style={{color:'var(--orange)'}}>
+        <span style={{color:'orange'}}>
           {testimonialsData[selected].name}
         </span>{" "}
         -{testimonialsData[selected].status}

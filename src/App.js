@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './Components/Footer/Footer';
 // import ReactDOM from "react-dom/client"
 import Hero from './Components/Hero/Hero';
 import Join from './Components/Join/Join';
@@ -12,11 +13,12 @@ function App() {
   return (
     <div className="App"> 
         <Hero/> 
-         <Programs/>
+        <Programs/>
         <Reasons/>
         <Plans/> 
         <Testimonials/>
         <Join/>
+        <Footer/>
 
         {/* <Router>
           <Routes>

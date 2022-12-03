@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Header.css"
 import Logo from '../../assets/logo.png'
+// import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -11,6 +12,7 @@ const Header = () => {
         <li>Programs</li>
         <li>Why us</li>
         <li>Plans</li>
+       {/* <Link to='/plans'> <li>Plans</li></Link> */}
         <li>Testimonials</li>
     </ul>
    </div>

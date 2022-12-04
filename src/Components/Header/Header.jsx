@@ -3,7 +3,7 @@ import "./Header.css";
 import Logo from "../../assets/logo.png";
 import Bars from "../../assets/bars.png";
 import { useState } from "react";
-import {Link } from 'react-router-dom'
+import { Link } from "react-scroll";
 
 const Header = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
@@ -13,7 +13,7 @@ const Header = () => {
     <div className="header">
       <img src={Logo} alt="" className="logo" />
       {menuOpened === false && mobile === true ? (
-        <div onClick={()=>setMenuOpened(true)}> 
+        <div onClick={() => setMenuOpened(true)}>
           <img
             src={Bars}
             alt=""
@@ -22,11 +22,57 @@ const Header = () => {
         </div>
       ) : (
         <ul className="header-menu">
-          <li  onClick={()=>setMenuOpened(false)}><Link to="/">Home</Link></li>
-          <li onClick={()=>setMenuOpened(false)}>Programs</li>
-          <li onClick={()=>setMenuOpened(false)}>Why us</li>
-          <li onClick={()=>setMenuOpened(false)}> <Link to="/plans">Plans</Link></li>
-          <li onClick={()=>setMenuOpened(false)}>Testimonials</li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="programs"
+              spy={true}
+              smooth={true}
+            >
+              Programs
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="reasons"
+              spy={true}
+              smooth={true}
+            >
+              Why us
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="plans"
+              spy={true}
+              smooth={true}
+            >
+              Plans
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="testimonials"
+              spy={true}
+              smooth={true}
+            >
+              Testimonials
+            </Link>
+          </li>
         </ul>
       )}
     </div>
@@ -34,6 +80,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-   {/* <li> <Link to='/plans' span={true}> Plans</Link></li> */}

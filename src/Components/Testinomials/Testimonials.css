@@ -1,101 +1,95 @@
-.Testimonials{
-    display: flex;
-    gap: 1rem;
-    padding: 0 2rem;
+.Testimonials {
+  display: flex;
+  gap: 1rem;
+  padding: 0 2rem;
 }
-.left-t{
-    display: flex;
-    flex: 1 1;
-    gap: 2rem;
+.left-t {
+  display: flex;
+  flex: 1 1;
+  gap: 2rem;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white;
+}
+.left-t > :nth-child(1) {
+  color: var(--orange);
+  font-weight: bold;
+}
+.left-t > :nth-child(2),
+.left-t > :nth-child(3) {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.left-t > :nth-child(4) {
+  text-transform: none;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.right-t {
+  flex: 1;
+  position: relative;
+}
+.right-t > img {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+  right: 8rem;
+  top: 2rem;
+}
+.right-t > :nth-child(1) {
+  position: absolute;
+  width: 20.5rem;
+  height: 23.5rem;
+  border: 2px solid rgb(209, 203, 192);
+  background-color: transparent;
+  right: 6rem;
+  top: 0.1rem;
+}
+
+.arrows {
+  display: flex;
+  position: absolute;
+  gap: 1rem;
+  bottom: 1rem;
+  left: 3rem;
+}
+.arrows > img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .Testimonials {
     flex-direction: column;
-    text-transform: uppercase;
-    color: white;
-}
-.left-t>:nth-child(1){
-    color: var(--orange);
-    font-weight: bold;
-}
-.left-t>:nth-child(2),.left-t>:nth-child(3){
-         font-weight: bold;
-         font-size: 3rem;
-}
-.left-t>:nth-child(4){
-    text-transform: none;
-    text-align: justify;
-    letter-spacing: 2px;
-    line-height: 40px;
-}
-
-
-.right-t{
-    flex:1;
-    position: relative;
-}
-.right-t>img{
-    position: absolute;
-    width: 17rem;
-    height: 20rem;
-    object-fit: cover;
-    right: 8rem;
-    top: 2rem;
-}
-.right-t>:nth-child(1){
-    position: absolute;
-    width: 17rem;
-    height: 20rem;
-    border: 2px solid rgb(244, 162, 10);
-    background-color: transparent;
-    right: 9rem;
-    top: 0.9rem;
-}
-.right-t>:nth-child(2){
-    position: absolute;
-    width: 17rem;
-    height: 19rem;
-    background:rgb(232, 151, 1);
-    right: 7rem;
-    top: 4rem;
-}
-.arrows{
+  }
+  .left-t > :nth-child(2),
+  .left-t > :nth-child(3) {
+    font-size: xx-large;
+  }
+  .right-t {
     display: flex;
-    position: absolute;
-    gap:1rem;
-    bottom: 1rem;
-    left: 3rem;
-}
-.arrows>img{
-    width: 1.5rem;
-    cursor: pointer;
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
 
-@media screen and (max-width:768px) {
-    .Testimonials{
-        flex-direction: column;
-    }
-    .left-t>:nth-child(2),.left-t>:nth-child(3){
-        font-size: xx-large;
-    }
-    .right-t{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-    }
-    /* this may need to remove as i may avoid this on main */
-    .right-t>div{
-       position: relative;
-       display: none;
-    }
-    .right-t>img{
-        top: 0;
-        right: 0;
-        position: relative;
-        align-self: center;
-    }
-    .right-t>:last-child{
-        display: block;
-        bottom: 0;
-        left: 0;
-    }
+  .right-t > div {
+    position: relative;
+    display: none;
+  }
+  .right-t > img {
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+  }
+  .right-t > :last-child {
+    display: block;
+    bottom: 0;
+    left: 0;
+  }
 }

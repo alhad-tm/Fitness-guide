@@ -13,6 +13,17 @@
     gap: 2rem;
     color: white;
 }
+
+.back-home{
+    color: rgb(231, 238, 238);
+    text-align: right;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 7px;
+    margin-right: 5px;
+    
+}
+
 @media screen and (max-width:768px) {
     .header>:nth-child(2){
         position: fixed;

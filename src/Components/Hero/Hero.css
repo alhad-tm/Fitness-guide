@@ -13,7 +13,6 @@
 .right-h{
     flex:1;
     position: relative;
-    /* background-color: rgb(0, 0, 0); */
     height: 39.8rem;
 }
 .header-menu>li:hover{
@@ -220,6 +219,12 @@
     .right-h{
         position: relative;
         background: none;
+    }
+    .right-h>button{
+        margin-right: -22px;
+       font-size: .7rem;
+       margin-top: -1rem;
+       background-color: #626668;
     }
     .heart-rate{
         left: 1rem;
